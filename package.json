@@ -1,5 +1,5 @@
 {
-  "name": "NLW4_NetPromoterScore",
+  "name": "nlw4-net-promoter-score",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
