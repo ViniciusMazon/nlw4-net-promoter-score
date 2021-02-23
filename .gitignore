@@ -1,4 +1,5 @@
 node_modules
 .env
 yarn.lock
-.sqlite
+*.sqlite
+*.sqlite3
