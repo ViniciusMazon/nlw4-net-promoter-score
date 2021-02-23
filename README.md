@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="NPS logo" title="NPS" src="docs\logo.svg" width="40%">
+  <img alt="NPS logo" title="NPS" src="docs\logo.svg" width="30%">
 </h1>
 <p align="center">
   <a href="#-sobre-o-projeto">Sobre o projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -12,6 +12,7 @@
     <p>
 ***    </p>
 </div>
+
 </br>
 </br>
 
@@ -43,7 +44,7 @@ Desenvolvido durante a NLW#4, créditos a [Rocketseat 🚀](https://github.com/R
 Clone o repositório:
 
 ```bash
-git clone https://github.com/ViniciusMazon/
+git clone https://github.com/ViniciusMazon/nlw4-net-promoter-score.git
 ```
 
 Instale as dependência rodando, individualmente em cada diretório (api, web e mobile), o comando:
@@ -72,7 +73,7 @@ yarn test
 # 🖖🏻 Como contribuir
 
 - Faça um fork desse repositório;
-- Clone esse repositório em sua máquina: `https://github.com/ViniciusMazon/`
+- Clone esse repositório em sua máquina: `https://github.com/ViniciusMazon/nlw4-net-promoter-score.git`
 - Cria uma branch com a sua feature: `git checkout -b minha-feature`;
 - Faça o commit dos testes: `git commit -m 'test: Nome do teste'`;
 - Faça commit das suas alterações: `git commit -m 'feat: Minha nova feature'`;
