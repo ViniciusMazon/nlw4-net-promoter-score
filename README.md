@@ -33,7 +33,11 @@ Desenvolvido durante a NLW#4, créditos a [Rocketseat 🚀](https://github.com/R
 
 - [NodeJs](https://nodejs.org/en/)
 
-- [TypeScriot](https://www.typescriptlang.org)
+- [TypeScript](https://www.typescriptlang.org)
+
+- [TypeORM](https://typeorm.io/#/)
+
+- [SQLite](https://www.sqlite.org/index.html)
 
   </br>
 
@@ -53,22 +57,19 @@ Instale as dependência rodando, individualmente em cada diretório (api, web e 
 yarn
 ```
 
-Suba o container rodando:
+Rode as migrations utilizando o script:
 
-```bash
-docker-compose up -d
 ```
+yarn typeorm migration:run
+```
+
 Rode a API utilizando o script:
 
 ```
 yarn dev
 ```
 
-Rode os testes na API utilizando o script:
 
-```
-yarn test
-```
 
 # 🖖🏻 Como contribuir
 
