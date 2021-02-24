@@ -27,9 +27,8 @@ class SurveyController {
 
       const all = await surveyRepository.find();
 
-      return response.status(201).json(all);
+      return response.status(200).json(all);
     } catch (err) {
-      console.log(err);
       return response.status(400).json({
         message: err.message || 'Unexpected error',
       });
