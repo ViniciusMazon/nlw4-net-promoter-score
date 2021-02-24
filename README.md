@@ -39,6 +39,10 @@ Desenvolvido durante a NLW#4, créditos a [Rocketseat 🚀](https://github.com/R
 
 - [SQLite](https://www.sqlite.org/index.html)
 
+- [Jest](https://jestjs.io)
+
+- [Supertest](https://www.npmjs.com/package/supertest)
+
   </br>
 
   </br>
@@ -69,7 +73,11 @@ Rode a API utilizando o script:
 yarn dev
 ```
 
+Rode os tests utiliando o script:
 
+```  
+yarn test
+```
 
 # 🖖🏻 Como contribuir
 
