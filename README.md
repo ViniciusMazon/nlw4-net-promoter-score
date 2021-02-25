@@ -43,6 +43,10 @@ Desenvolvido durante a NLW#4, créditos a [Rocketseat 🚀](https://github.com/R
 
 - [Supertest](https://www.npmjs.com/package/supertest)
 
+- [Nodemailer](https://nodemailer.com/about/)
+
+- [Handlebars](https://handlebarsjs.com/guide/#what-is-handlebars)
+
   </br>
 
   </br>
