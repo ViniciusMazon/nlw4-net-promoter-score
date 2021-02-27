@@ -17,7 +17,7 @@
 </br>
 </br>
 
-# 💡 Sobre o projeto (Em desenvolvimento)
+# 💡 Sobre o projeto
 
 Net Promoter Score (NPS) é uma métrica de satisfação dos clientes. Clientes muito satisfeitos tem uma grande probabilidade de se tornarem promotores de um produto ou serviço, indicando-o a amigos e familiares.
 
