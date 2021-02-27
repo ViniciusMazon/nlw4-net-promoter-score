@@ -3,14 +3,15 @@
 </h1>
 <p align="center">
   <a href="#-sobre-o-projeto">Sobre o projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-como-utilizar">Desenvolvimento</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-construído-utilizando">Construído utilizando</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-como-utilizar">Como utilizar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-como-contribuir">Como contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-licença">Licença</a>
 </p>
 <div align="center">
     <p>
-***    </p>
+<a href="https://github.com/ViniciusMazon/nlw4-net-promoter-score/blob/develop/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/ViniciusMazon/nlw4-net-promoter-score?style=for-the-badge"></a>        
+</p>
 </div>
 
 </br>
@@ -18,18 +19,24 @@
 
 # 💡 Sobre o projeto (Em desenvolvimento)
 
+Net Promoter Score (NPS) é uma métrica de satisfação dos clientes. Clientes muito satisfeitos tem uma grande probabilidade de se tornarem promotores de um produto ou serviço, indicando-o a amigos e familiares.
+
+O NPS é calculado por meio da fórmula: (promotores - detratores) / total de usuários, sendo os promotores os usuários que responderam a pesquisa dando uma nota entre 9 e 10,  os detratores os que deram notas entre 0 e 6. Usuários que responderam com uma nota entre 7 e 8 são considerados passivos.
+
+O Promote.me é uma API que envia pesquisas de satisfação para o e-mail dos usuários cadastrados e calcula o NPS com base nas respostas.
+
 Desenvolvido durante a NLW#4, créditos a [Rocketseat 🚀](https://github.com/Rocketseat)
 
 </br>
 </br>
 
 <p align="center">
-  <!-- <img alt="web" src="docs/web.png" width="80%"> -->
+  <img alt="web" src="docs/web.png" width="80%">
 </p>
 
 
 
-# 🔬 Tecnologias
+# 🔬 Construído utilizando
 
 - [NodeJs](https://nodejs.org/en/)
 
@@ -47,11 +54,15 @@ Desenvolvido durante a NLW#4, créditos a [Rocketseat 🚀](https://github.com/R
 
 - [Handlebars](https://handlebarsjs.com/guide/#what-is-handlebars)
 
-  </br>
+- [Commitizen](https://github.com/commitizen/cz-cli)
+
+- [GitFlow](https://github.com/nvie/gitflow)
 
   </br>
 
-# ⚙️ Desenvolvimento
+  </br>
+
+# ⚙️ Como utilizar
 
 Clone o repositório:
 
@@ -83,6 +94,8 @@ Rode os tests utiliando o script:
 yarn test
 ```
 
+</br>
+
 # 🖖🏻 Como contribuir
 
 - Faça um fork desse repositório;
@@ -93,6 +106,8 @@ yarn test
 - Faça push para a sua branch: `git push origin minha-feature`.
 
 Depois que o merge da sua pull request for feito, você pode deletar a sua branch.
+
+</br>
 
 # 📃 Licença
 
