@@ -1,38 +1,32 @@
 import { Request, Response } from 'express';
 import { getCustomRepository } from 'typeorm';
 import { SurveyRepository } from '../repositories/SurveyRepository';
+import * as yup from 'yup';
 
 class SurveyController {
   async create(request: Request, response: Response) {
     const { title, description } = request.body;
 
-    try {
-      const surveyRepository = getCustomRepository(SurveyRepository);
+    const schema = yup.object().shape({
+      title: yup.string().required(),
+      description: yup.string().required(),
+    });
 
-      const survey = await surveyRepository.create({ title, description });
-      await surveyRepository.save(survey);
+    await schema.validate(request.body, { abortEarly: false });
 
-      return response.status(201).json(survey);
-    } catch (err) {
-      console.log(err);
-      return response.status(400).json({
-        message: err.message || 'Unexpected error',
-      });
-    }
+    const surveyRepository = getCustomRepository(SurveyRepository);
+    const survey = await surveyRepository.create({ title, description });
+    await surveyRepository.save(survey);
+
+    return response.status(201).json(survey);
   }
 
   async index(request: Request, response: Response) {
-    try {
-      const surveyRepository = getCustomRepository(SurveyRepository);
+    const surveyRepository = getCustomRepository(SurveyRepository);
 
-      const all = await surveyRepository.find();
+    const all = await surveyRepository.find();
 
-      return response.status(200).json(all);
-    } catch (err) {
-      return response.status(400).json({
-        message: err.message || 'Unexpected error',
-      });
-    }
+    return response.status(200).json(all);
   }
 }
 

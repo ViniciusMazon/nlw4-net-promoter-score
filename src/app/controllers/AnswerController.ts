@@ -2,11 +2,22 @@ import { Request, Response } from 'express';
 import { getCustomRepository } from 'typeorm';
 import { AppError } from '../../errors/AppError';
 import { SurveyUserRepository } from '../repositories/SurveyUserRepository';
+import * as yup from 'yup';
 
 class AnswerController {
   async execute(request: Request, response: Response) {
     const { value } = request.params;
     const { u } = request.query;
+
+    const schema = yup.object().shape({
+      value: yup.string().required(),
+      u: yup.string().required(),
+    });
+
+    await schema.validate(
+      { value: request.params.value, u: request.query.u },
+      { abortEarly: false }
+    );
 
     const surveyUserRepository = getCustomRepository(SurveyUserRepository);
 
