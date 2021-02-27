@@ -1,5 +1,6 @@
 <style>
   .container {
+    margin: 0 auto;
     width: 800px;
 
     display: flex;
@@ -9,8 +10,12 @@
     align-content: center;
   }
 
+  .container img {
+    width: 100px;
+  }
+
   .value {
-    width: 15px;
+    min-width: 15px;
     height: 15px;
     padding: 10px;
     margin: 5px;
@@ -21,17 +26,23 @@
     color: #fff;
     text-align: center;
     text-decoration: none;
+
+    transition: filter 0.2s;
+  }
+
+  .value:hover {
+    filter: brightness(0.9);
   }
 
   .level {
-    width: 350px;
+    width: 500px;
     display: flex;
     margin: 10px;
     justify-content: space-between;
   }
 
   .answers {
-    width: 350px;
+    width: 500px;
 
     display: flex;
     justify-content: space-between;
@@ -68,4 +79,8 @@
 
   <strong>Sua opinião é muito importante para nós</strong>
   <h3>Equipe <strong>Promote.me</strong></h3>
+  <img
+    src="https://raw.githubusercontent.com/ViniciusMazon/nlw4-net-promoter-score/dcff7ac5d9e1ac3a81fc85904dd69a854e0549d0/docs/logo.svg"
+    alt="Logo Promote.me" style="max-width: 150px" />
+
 </div>
