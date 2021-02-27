@@ -25,7 +25,7 @@ class UserController {
     const user = await userRepository.create({ name, email });
     await userRepository.save(user);
 
-    return response.status(201).send();
+    return response.status(201).json(user);
   }
 }
 

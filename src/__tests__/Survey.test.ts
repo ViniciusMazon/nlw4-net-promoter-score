@@ -31,6 +31,6 @@ describe('Survey', () => {
     const response = await request(app).get('/surveys');
 
     expect(response.status).toBe(200);
-    expect(response.body.length).toEqual(2);
+    expect(response.body.length).toEqual(4);
   });
 });

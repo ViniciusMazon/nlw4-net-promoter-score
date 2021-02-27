@@ -67,16 +67,17 @@ class SendMailController {
     await surveyUserRepository.save(surveyUser);
     variables.id = surveyUser.id;
 
-    await sendMailService.execute(
-      email,
-      surveyExists.title,
-      variables,
-      npsPath
-    );
+    if (process.env.NODE_ENV !== 'test') {
+      await sendMailService.execute(
+        email,
+        surveyExists.title,
+        variables,
+        npsPath
+      );
+    }
 
     return response.status(201).json(surveyUser);
   }
 }
 
 export { SendMailController };
-
